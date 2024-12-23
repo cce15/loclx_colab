@@ -1,0 +1,4 @@
+http_service:
+  region: us
+  to: localhost:1234
+  type: http
