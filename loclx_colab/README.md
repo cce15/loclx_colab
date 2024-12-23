@@ -17,5 +17,8 @@ To install the package on Colab, run:
 ```bash
 !pip install loclx_colab
 
-'''Python
-Print(_
+```
+
+```Python
+print("test"
+```
