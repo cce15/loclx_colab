@@ -19,6 +19,23 @@ To install the package on Colab, run:
 
 ```
 
+## Usage
+Create an HTTP tunnel
 ```Python
-print("test"
+import loclx_colab.loclx as lx
+
+port = 1234 # The service port that you want to expose
+access_token = "your_access_token" # Your LocalXpose token here
+url = lx.http_tunnel_start(port, access_token) 
+print(f"Your service is exposed to this URL: {url}")
 ```
+Stop the HTTP tunneling service 
+```Python
+lx.http_tunnel_stop()
+```
+List HTTP tunels
+```Python
+lx.http_tunnel_status()
+```
+
+
